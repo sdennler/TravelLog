@@ -1,0 +1,166 @@
+@media screen, projection {
+
+* {
+ font-family:"Droid Sans",Helvetica,Arial,sans-serife;
+}
+
+body {
+ padding:8px 6px;
+ text-align:center;
+ overflow-y:scroll;
+}
+.page_margins {
+ text-align:left;
+ margin:0 auto;
+ min-width:400px;
+ max-width:50em;
+}
+.page {
+ padding:8px;
+}
+
+#skiplinks a.skip:focus,
+#skiplinks a.skip:active { 
+ color:#fff; 
+ background:#333; 
+ border-bottom:1px #000 solid;
+ padding:10px 0;
+ text-decoration:none;
+}
+
+#topnav { 
+ background:transparent; 
+ color:#aaa; 
+ position:absolute;
+ top:18px;
+ right:18px;
+ text-align:right;
+ font-size:10px;
+}
+#header {
+ background:#000000 url(../../images/head_chot.jpeg) no-repeat;
+ height:100px;
+ width:584px;
+ margin-bottom:14px;
+ position:relative;
+}
+#header h1 {
+ color:#1E90FF;
+ font-weight:bold;
+ font-size:2.5em;
+ padding:45px 10px 10px 30px;
+ position:relative;
+}
+
+#main {
+ z-index:1;
+}
+
+#footer {
+ color:#666;
+ padding:10px 20px;
+ border-top:1px #6D6D6D solid;
+ line-height:1.5em;
+ margin-top:12px;
+}
+
+#header, #nav, #main, #footer { clear:both; }
+
+.bub {
+ background:#fff;
+ padding:10px 12px;
+ margin-bottom:12px;
+ border:3px solid #4D4D4D;
+ top:-3px;
+ position:relative;
+}
+ 
+}
+
+@media all {
+
+/** Tab Menue **/
+.hlist {
+ float:left;
+ width:100%;
+ z-index:2;
+}
+.hlist ul {
+ margin:0;
+ padding:0;
+ line-height:1em;
+ list-style:none;
+ white-space:nowrap;
+}
+.hlist li {
+ list-style-type:none !important;
+ background:#4AA0F2;
+ border-bottom:3px solid #4D4D4D;
+ float:left;
+ margin:0;
+ padding:0 0 0 3px;
+}
+.hlist a {
+ background:transparent;
+ color:#240808;
+ display:block;
+ font-weight:normal;
+ padding:5px 11px 3px 8px;
+ text-decoration:none;
+ text-transform:none;
+ /**
+  * @bugfix
+  * @affected   IE5.x, IE6
+  * @css-for    all browsers
+  * @valid      yes
+  */
+ width:auto; /* only IE 5.x */
+ width/**/:/**/ .1em; /* only IE 6.0 */
+}
+.hlist a:link,
+.hlist a:visited { background-color:transparent; }
+
+/**
+ * @bugfix
+ * @affected   IE5.x, IE6
+ * @css-for    all browsers
+ * @valid      yes
+ */
+.hlist > ul a { width:auto; }  /* for other browsers */
+
+.hlist ul li:focus,
+.hlist ul li:hover,
+.hlist ul li:active {
+ background-color:#c4d0dc;
+}
+
+.hlist ul li:focus a,
+.hlist ul li:hover a,
+.hlist ul li:active a {
+}
+
+.hlist a:focus,
+.hlist a:hover,
+.hlist a:active {
+ background:transparent;
+ color:#000000;
+ outline: 0 none;
+ text-decoration:none;
+}
+
+.hlist ul li.active,
+.hlist ul li.active:focus,
+.hlist ul li.active:hover,
+.hlist ul li.active:active {
+ background:#A68E54;
+ border:0 none;
+}
+
+.hlist ul li.active a,
+.hlist ul li.active a:focus,
+.hlist ul li.active a:hover,
+.hlist ul li.active a:active {
+ color:#C4E3FF;
+}
+
+}
