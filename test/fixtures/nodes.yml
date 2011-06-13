@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  symbol: MyString
+  visited: 2011-06-14
+  lat: 1.5
+  lon: 1.5
+  post: 
+
+two:
+  name: MyString
+  symbol: MyString
+  visited: 2011-06-14
+  lat: 1.5
+  lon: 1.5
+  post: 

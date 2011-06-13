@@ -1,5 +1,7 @@
 TravelLog::Application.routes.draw do
 
+  resources :posts
+
   match 'about' => "static#about"
 
   root :to => "static#welcome"
