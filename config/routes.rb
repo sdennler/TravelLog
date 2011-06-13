@@ -1,6 +1,7 @@
 TravelLog::Application.routes.draw do
 
   resources :posts
+  resourcrs :nodes
 
   match 'about' => "static#about"
 
