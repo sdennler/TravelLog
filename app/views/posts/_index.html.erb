@@ -1,0 +1,18 @@
+<h1>Reiseziele</h1>
+
+<div class="post_list">
+
+<% @posts.each do |post| %>
+  <div class="post">
+    <h3><%= link_to post.location, {:action => :show, :id => post.id, :anchor => 'content'} %><%= if post.title != '' then ' - '+post.title end %></h3>
+    <div><%= post.date %></div>
+    <div>
+     <%= link_to 'Edit', edit_post_path(post) %>
+     <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    </div>
+  </div>
+<% end %>
+
+</div>
+
+<%= link_to 'New Post', new_post_path %>

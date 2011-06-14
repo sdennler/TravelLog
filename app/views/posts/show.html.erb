@@ -1,3 +1,9 @@
+<div class="bub" role="navigation">
+<%= render 'index' %>
+</div>
+
+<div class="bub" role="article" id="content">
+
 <p id="notice"><%= notice %></p>
 
 <h2><%= @post.location %> - <%= @post.title %></h2>
@@ -6,3 +12,5 @@
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+</div>

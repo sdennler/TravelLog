@@ -1,11 +1,11 @@
 TravelLog::Application.routes.draw do
 
   resources :posts
-  resourcrs :nodes
+  resources :nodes
 
-  match 'about' => "static#about"
+  match 'about' => 'static#about'
 
-  root :to => "static#welcome"
+  root :to => 'static#welcome'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
