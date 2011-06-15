@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     @posts = Post.order('date DESC').all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render '_index' }
       format.xml  { render :xml => @posts }
     end
   end

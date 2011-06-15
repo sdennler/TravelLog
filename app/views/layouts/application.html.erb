@@ -42,7 +42,17 @@
   
   <div id="main">
 
+    <div class="bub" role="navigation" id="navbub"<%= raw !content_for?(:navbub) ? ' style="display:none;"' : '' %>>
+
+     <%= yield(:navbub) %>
+
+    </div>
+    
+    <div class="bub" role="article" id="content"<%= raw !content_for?(:layout) ? ' style="display:none;"' : '' %>>
+    
      <%= yield %>
+    
+    </div>
 
   </div>
 
