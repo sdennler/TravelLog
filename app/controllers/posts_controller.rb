@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-    @posts = Post.order('date DESC').all
+    @posts = find
 
     respond_to do |format|
       format.html { render '_index' }
@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @posts = Post.order('date DESC').all
+    @posts = find
   end
 
   # GET /posts/new
@@ -74,4 +74,15 @@ class PostsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  protected
+  
+  def find
+    if params[:query]
+      Post.where('title LIKE :query OR location LIKE :query OR content LIKE :query', {:query => '%'+params[:query]+'%'}).order('date DESC').all
+    else
+      Post.order('date DESC').all
+    end
+  end
+  
 end
