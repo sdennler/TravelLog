@@ -1,17 +1,17 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+beach:
+ id: 1
+ name: Kleiner, abgelegener Strand
+ symbol: Beach
+ visited: 2011-01-27
+ lat: 8.078799
+ lon: 77.537297
+ post: 1
 
-one:
-  name: MyString
-  symbol: MyString
-  visited: 2011-06-14
-  lat: 1.5
-  lon: 1.5
-  post: 
-
-two:
-  name: MyString
-  symbol: MyString
-  visited: 2011-06-14
-  lat: 1.5
-  lon: 1.5
-  post: 
+hotel:
+ id: 2
+ name: Hotel Narmadha
+ symbol: Lodging
+ visited: 2011-01-27
+ lat: 8.081591
+ lon: 77.548366
+ post: 1

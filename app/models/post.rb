@@ -1,3 +1,5 @@
 class Post < ActiveRecord::Base
-  has_many :nodes
+ validates_presence_of :location, :date
+ 
+ has_many :nodes
 end

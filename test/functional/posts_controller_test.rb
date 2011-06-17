@@ -2,13 +2,14 @@ require 'test_helper'
 
 class PostsControllerTest < ActionController::TestCase
   setup do
-    @post = posts(:one)
+    @post = posts(:whit_text_and_title)
   end
 
   test "should get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:posts)
+    assert_select 'h2', 'Reiseziele'
   end
 
   test "should get new" do
@@ -27,6 +28,8 @@ class PostsControllerTest < ActionController::TestCase
   test "should show post" do
     get :show, :id => @post.to_param
     assert_response :success
+    assert_select 'h2', 'Reiseziele'
+    assert_select 'h3', 'Kanyakumari, Tamil Nadu, Indien - Das Ende von Indien'
   end
 
   test "should get edit" do

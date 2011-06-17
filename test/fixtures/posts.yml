@@ -1,13 +1,27 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+whit_text_and_title:
+ id: 1
+ title: Das Ende von Indien
+ location: Kanyakumari, Tamil Nadu, Indien
+ date: 2011-01-27
+ content: Das südliche Ende von Indien. Bei N 8.078799 E 77.537297 fand ich einen kleinen, abgelegenen Strand der eigentlich einen Cache verdient hätte... :-) 
 
-one:
-  title: MyString
-  location: MyString
-  date: 2011-06-13
-  content: MyText
+whit_title:
+ id: 2
+ title: Der erste Badestrand
+ location: Varkala, Kerala, Indien
+ date: 2011-01-23
+ content: 
 
-two:
-  title: MyString
-  location: MyString
-  date: 2011-06-13
-  content: MyText
+whit_text:
+ id: 3
+ title: 
+ location: Munnar, Kerala, Indien
+ date: 2011-01-14
+ content: "In Munnar habe ich einen neuen Trick kennen gelernt: Wir hatten eine telefonische Reservierung im Kaippallil Homestay das im Lonely Planet als die beste Unterkunft in Munnar angepriesen wurde. Aus Bequemlichkeit liessen wir uns mit einer Rikscha hin fahren. Der Fahrer hielt am Fuss einer kleiner wild überwucherten Erhöhung auf der eine grosse Bauruine thronte. Er zeigte auf die Ruine und meinte: „Das ist Kaippallil. Und da hinten ist noch eine andere Unterkunft.“ Etwas ernüchtert machten wir uns auf den kurzen Aufstieg und wurden auch gleich vom freundlich lächelnden Manager empfangen (der aus der Richtung von da hinten kam…). Er erklärte uns das das noch nicht ganz vertilge Gebäude Kaippallil sei, wenn es uns aber nicht gefällt, hätten sie da hinten noch Zimmer frei… Die beiden Zimmer die wir da sahen wahren in einem ziemlich schlechten Zustand mit Löcher in den Wänden und einigem Dreck (ok, die Aussicht von dem Zimmer mit Balkon über Munnar war recht gut). Insgesamt also nicht besonders behaglich. Also liessen wir uns die Zimmer im Reinberg „da hinten“ zeigen. Die Zimmer waren viel besser und entsprachen der Beschreibung des Kaippallil im Lonly Planet – nur natürlich mit einem deutlich höheren Preis. Als wir unsere Vermutung mit dem Namenstausch äusserten, wurde das nach einigem Herumgedrücke sogar bestätigt. Das „Sonderangebot“ das wir von Anfang an erhielten war zwar durchaus gerechtfertigt, trotzdem schmeckte das ganze nicht. Also Buch raus - Nummer wählen - Zimmer frei - gut, wir gehen in die nächste Unterkunft ;-)" 
+
+only_location:
+ id: 4
+ title: 
+ location: Kumily, Kerala, Indien
+ date: 2011-01-16
+ content: 
