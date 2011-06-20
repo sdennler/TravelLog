@@ -4,6 +4,7 @@ TravelLog::Application.routes.draw do
   resources :nodes
 
   match 'search' => 'posts#index'
+  match 'map' => 'posts#map'
 
   root :to => 'static#welcome'
   match 'about' => 'static#about'

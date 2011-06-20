@@ -1,0 +1,3 @@
+lat	lon	title	description	icon	iconSize	iconOffset
+27.94849	084.41853	Siddha Cave	Eine interessante Höhle	cave.png	24,24	0,-24
+27.9291	84.3967	Tigers Market

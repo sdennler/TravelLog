@@ -9,6 +9,10 @@ class PostsController < ApplicationController
       format.xml  { render :xml => @posts }
     end
   end
+  
+  def map
+  
+  end
 
   def show
     @post = Post.find(params[:id])
