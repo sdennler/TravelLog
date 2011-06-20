@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
-  # GET /posts
-  # GET /posts.xml
+
   def index
     @posts = find
 
     respond_to do |format|
       format.html { render '_index' }
+      format.js   { }
       format.xml  { render :xml => @posts }
     end
   end

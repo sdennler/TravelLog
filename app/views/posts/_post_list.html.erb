@@ -1,0 +1,20 @@
+<% if @posts.count < 1 %>
+ <div class="error">Sorry, kein Reiseziel <%= raw params[:query].empty? ? '' : 'zum Stichwort "<strong>'+ h(params[:query]) +'</strong>"' %> gefunden.</div>
+<% else %>
+<% @posts.each do |post| %>
+ <div class="post">
+  <h3>
+   <%= link_to post.location,
+    {:action => :show, :id => post.id, :query => params[:query], :anchor => 'content'},
+    {:remote  => true}
+   %>
+   <%= post.title.empty? ? '' : ' - '+post.title %>
+  </h3>
+  <div><%= post.date %></div>
+  <div>
+   <%= link_to 'Edit', edit_post_path(post) %>
+   <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+  </div>
+ </div>
+<% end %>
+<% end %>

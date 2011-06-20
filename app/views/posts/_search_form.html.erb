@@ -1,5 +1,5 @@
-<%= form_tag('/search', :method => 'get') do %>
-  <%= label_tag(:query, 'Suche') %>
+<%= form_tag('/search', :method => 'get', :remote => true) do %>
+  <%= label_tag(:query, 'Finden') %>
   <%= text_field_tag(:query, params[:query]) %>
-  <%= submit_tag('Los') %>
+  <%= submit_tag('Los!') %>
 <% end %>

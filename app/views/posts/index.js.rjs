@@ -1,0 +1,1 @@
+page.replace_html 'post_list', :partial => 'post_list', :locals => { :@posts => @posts }
