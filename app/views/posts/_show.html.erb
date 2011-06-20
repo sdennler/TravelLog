@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h3><%= @post.location %> - <%= @post.title %></h3>
+<h3><%= @post.location %><%= show_title_for @post %></h3>
 <div><%= @post.date %></div>
 <div><%= @post.content %></div>
 

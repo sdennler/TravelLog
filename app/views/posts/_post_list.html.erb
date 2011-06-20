@@ -8,7 +8,7 @@
     {:action => :show, :id => post.id, :query => params[:query], :anchor => 'content'},
     {:remote  => true}
    %>
-   <%= post.title.empty? ? '' : ' - '+post.title %>
+   <%= show_title_for post %>
   </h3>
   <div><%= post.date %></div>
   <div>
