@@ -10,6 +10,12 @@
  var lay_osm = new OpenLayers.Layer.OSM();
  map.addLayer(lay_osm);
 
+ var pois = new OpenLayers.Layer.Text('Interessante Orte', {
+  location: './pois.txt',
+  projection: map.displayProjection
+ });
+ map.addLayer(pois);
+
  var map_center = new OpenLayers.LonLat(54.41853, 27.94849).transform(
   new OpenLayers.Projection('EPSG:4326'), // WGS 1984
   map.getProjectionObject() // Spherical Mercator Projection
