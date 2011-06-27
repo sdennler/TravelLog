@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.new.search params[:query]
+    @posts = Post.search params[:query]
 
     respond_to do |format|
       format.html { render '_index' }
@@ -16,7 +16,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @posts = Post.new.search params[:query]
+    @posts = Post.search params[:query]
   end
 
   # GET /posts/new

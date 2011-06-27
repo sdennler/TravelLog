@@ -3,7 +3,7 @@ class Post < ActiveRecord::Base
  
  has_many :nodes
  
- def search query = nil
+ def Post.search query = nil
   if query == nil
    Post.order('date DESC').all
   else

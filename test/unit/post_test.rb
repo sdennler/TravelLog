@@ -15,7 +15,7 @@ class PostTest < ActiveSupport::TestCase
  end
 
  test 'search should return all posts ordered by date' do
-  posts = Post.new.search
+  posts = Post.search
   assert_equal 4, posts.count
   ids = []
   posts.each {|p| ids << p.id}
@@ -23,7 +23,7 @@ class PostTest < ActiveSupport::TestCase
  end
  
  test 'search should return all posts from kerala' do
-  posts = Post.new.search 'kerala'
+  posts = Post.search 'kerala'
   ids = []
   posts.each {|p| ids << p.id}
   assert_equal [2,4,3], ids
